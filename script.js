@@ -1,36 +1,5 @@
-	function suma()
-	{
-	//sendMessage('suma')
-	var Number1= parseInt(document.getElementById('Num1').value);
-	var Number2= parseInt(document.getElementById('Num2').value);
-	var Number3= parseInt(document.getElementById('Num3').value);
-	var Number4= parseInt(document.getElementById('Num4').value);
-	var Resultado;
-	Resultado=Number1+Number2+Number3+Number4;
-	document.getElementById('res').value=Resultado;
-	console.log(Number1)
-	console.log(Number2)
-	console.log(Number3)
-	console.log(Number4)
-	console.log(Resultado)
-	console.log(res)
-	console.log(suma)
-	}
-	function resta()
-	{
-	//sendMessage('resta')
-	var Number1= parseInt(document.getElementById('Num1').value);
-	var Number2= parseInt(document.getElementById('Num2').value);
-	var Resultado1;
-	Resultado1=Number1-Number2;
-	document.getElementById('res').value=Resultado1;
-	console.log(res)
-	console.log(Number1)
-	console.log(Number2)
-	console.log(Resultado1)
-	}
 
-
+  alert('hola');
 var etiqueta;
 function onloadFcn(){
 	etiqueta=document.getElementById("led");
@@ -100,19 +69,19 @@ function onloadFcn(){
     // called when a message arrives
   function led_on() {
 	sendMessage('led=1')
-	var prueba = "LED PRENDIDO";
-	document.write(prueba);	
+	//var prueba = "LED PRENDIDO";
+	//document.write(prueba);	
 	var Resultado1;
-	Resultado1=Number1-Number2;
+	Resultado1="PRENDIDO";
 	document.getElementById('res').value=Resultado1;
 	console.log(res)
   }
   function led_off() {
 	sendMessage('led=0')
-	var prueba = "LED APAGADO";
-	document.write(prueba);	
+	//var prueba = "LED APAGADO";
+	//document.write(prueba);	
 	var Resultado1;
-	Resultado1=Number1-Number2;
+	Resultado1="APAGADO";
 	document.getElementById('res').value=Resultado1;
 	console.log(res)
   }
@@ -131,4 +100,3 @@ mensaje=msg.split('=');
       
 		
   }
-  
