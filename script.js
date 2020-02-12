@@ -1,5 +1,5 @@
 
-  alert('hola');
+alert('hola');
 var etiqueta;
 function onloadFcn(){
 	etiqueta=document.getElementById("led");
