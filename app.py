@@ -46,11 +46,14 @@ class myHandler(BaseHTTPRequestHandler):
 				sendReply = True
 			if self.path.endswith(".js"):
 				mimetype='application/javascript'
+				
 				sendReply = True
 			if self.path.endswith(".css"):
 				mimetype='text/css'
 				sendReply = True
-
+				f=open(nombre)
+				datos=f.read()
+				f.close()
 			if sendReply == True:
 				#Open the static file requested and send it
 				#f = open(curdir + sep + self.path,'r') 
