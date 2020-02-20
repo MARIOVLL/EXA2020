@@ -106,7 +106,7 @@ y=0;
 		else {
 			y=0;
 			sendMessage('led0')
-			document.getElementById("led_state").innerHTML ="Sensor APAGADO";
+			document.getElementById('led_state').innerHTML ="Sensor APAGADO";
 			}  
 	
 	console.log("Te enviaron:"+message.payloadString);	
