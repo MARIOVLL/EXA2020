@@ -100,3 +100,19 @@ mensaje=msg.split('=');
       
 		
   }
+y=0;
+	function led1() {
+		if (y == 0){
+			sendMessage('led1')
+			document.getElementById("led_state").innerHTML ="Sensor ACTIVO";
+			y=1;}
+		else {
+			y=0;
+			sendMessage('led0')
+			document.getElementById("led_state").innerHTML ="Sensor APAGADO";
+			}  
+	
+	console.log("Te enviaron:"+message.payloadString);	
+  }
+
+
